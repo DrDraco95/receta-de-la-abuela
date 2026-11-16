@@ -1,0 +1,102 @@
+
+/* ===== CONFIGURACIÓN GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f8f1e7;
+    color: #44352b;
+    line-height: 1.8;
+    padding: 30px 20px;
+}
+
+/* ===== ENCABEZADO ===== */
+header {
+    background: linear-gradient(135deg, #743f25, #a65d35);
+    color: #fff8ec;
+    text-align: center;
+    padding: 55px 20px;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 0 auto 35px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+header h1::after {
+    content: "❧";
+    display: block;
+    font-size: 30px;
+    margin-top: 10px;
+    color: #e9c58c;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+main {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fffdf8;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(80, 50, 30, 0.08);
+}
+
+/* ===== PASOS DE LA RECETA ===== */
+main p {
+    position: relative;
+    background-color: #fbf4e9;
+    border-left: 5px solid #b66b3c;
+    padding: 22px 25px;
+    margin-bottom: 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: justify;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+main p:hover {
+    background-color: #f5e8d5;
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(80, 50, 30, 0.08);
+}
+
+/* ===== ÚLTIMO PASO ===== */
+main p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== RESPONSIVE PARA CELULARES ===== */
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    main p {
+        padding: 18px 15px;
+        font-size: 15px;
+        text-align: left;
+    }
+}
